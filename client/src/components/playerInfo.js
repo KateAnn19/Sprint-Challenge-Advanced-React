@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 
-export const PlayerInfo = (props) => {
+export const PlayerInfo = ({data}) => {
     return (
-        <div className="Card">  
+        <div className="Card"> 
+        
             <div className="Card-Info">
-            <h1><span>⚽</span>{props.data.name}</h1>
-            <h2>Country {props.data.country}</h2>
-            <h3>Searches: {props.data.searches}</h3>
-            <h3>Awesomeness: 1000000!!!</h3> 
+            <NavLink className="Individual" to={`/players/${data.id}`}>
+            <h1><span>⚽</span>{data.name}</h1>
+            </NavLink>
+            {/* <h2>Country {data.country}</h2>
+            <h3>Searches: {data.searches}</h3> */}
+            <h3>Awesomeness: 1,000,000!!!</h3> 
             </div>
         </div>
     )
