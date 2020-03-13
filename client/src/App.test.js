@@ -5,9 +5,9 @@ import {render} from '@testing-library/react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 
-it('renders without crashing', () => {
+test('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Router><App /></Router>, div);
+  ReactDOM.render(<Router><App/></Router>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
