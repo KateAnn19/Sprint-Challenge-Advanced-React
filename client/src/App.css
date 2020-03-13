@@ -1,33 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.App-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Card{
+  display: flex;
+  flex: wrap;
+  width: 90%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Info {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 30px auto;
+  max-width: 900px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.Card-Info{
+  padding: 10%;
+  background: skyblue;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  
+}
+
+.I-Card{
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  text-align: center;
+  background-image: url("https://live.staticflickr.com/7456/11042943273_1b0522f77c_b.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10% 2% 10% .5%;
+}
+
+.I-Card-Info{
+  padding: 10%;
+  background: skyblue;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.I-Info {
+  display: grid;
+  grid-gap: 120px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 30px auto;
+  max-width: 900px;
+  
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 32px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1c5d76;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.nav-links a:last-of-type {
+  margin-right: 0;
+}
+
+.nav-links a.active {
+  border-bottom: 1px solid #1c5d76;
+}
+
+.Individual{
+  text-decoration: none;
+  color: firebrick;
+}
+
+/* highlights */
+
+.Highlight-Header{
+  text-align: center;
+  font-size: 4rem;
+  color:firebrick; 
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: -6%;
+}
+
+.Videos{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: wrap;
+  /* margin: 10%; */
+  padding: 5%;
+  width: 90%;
+  margin-left: 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.Video{
+  margin: 2%;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color: gold;
+  border-radius: .5rem;
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
 }
