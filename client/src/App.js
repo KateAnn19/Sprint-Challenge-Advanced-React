@@ -8,6 +8,7 @@ import Players from './components/players';
 import {PlayerInfo} from './components/playerInfo';
 import {Highlights} from './components/highlights';
 import {PlayerCard} from './components/playerCard';
+import {SearchBar} from './components/searchbar';
 
 function App() {
   const [darkMode, setDarkMode] = useDarkMode("mode", false);
@@ -37,6 +38,7 @@ function App() {
             <span>⚽⚽⚽⚽⚽</span>{" "}
           </h1>
         </header>
+        
         <Players />
       </Route>
       <Route path="/players/:id">

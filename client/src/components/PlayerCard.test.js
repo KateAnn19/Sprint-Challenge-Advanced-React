@@ -4,7 +4,6 @@ import { PlayerCard } from './playerCard';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 
-
   test('renders heading from page', () => {
     const {getByText} =  render(
       <Router>
